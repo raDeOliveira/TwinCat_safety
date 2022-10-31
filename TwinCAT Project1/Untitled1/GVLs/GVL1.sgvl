@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GlobalVariables Crc="3126619655" Id="ed1c4815-0e86-43f2-a6b8-1205063cc2c5" FileFormatVersion="1.0">
+  <Variable Id="2fe0496e-5feb-474c-90cc-a56bef812a75">
+    <Name>RunStop</Name>
+    <SourceUsages>
+      <AliasDeviceIoUsage Id="15f9effd-b531-4c38-bf1c-8262f26ef03a">
+        <SdsId>3</SdsId>
+        <ChannelId>1</ChannelId>
+        <FunctionId>1131179973</FunctionId>
+      </AliasDeviceIoUsage>
+    </SourceUsages>
+    <TargetUsages>
+      <GroupPortUsage Id="a0fe2bcd-fc95-4843-ba01-fd40902231f8">
+        <ModelElementId>5349e346-92c8-4984-8807-1a2fc87ddb13</ModelElementId>
+      </GroupPortUsage>
+    </TargetUsages>
+  </Variable>
+</GlobalVariables>

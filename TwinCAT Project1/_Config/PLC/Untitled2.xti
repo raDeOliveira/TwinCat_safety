@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.32" ClassName="CNestedPlcProjDef">
+	<Project GUID="{1B2E728E-6886-4FFB-9586-458BF0CE01E3}" Name="Untitled2" PrjFilePath="..\..\Untitled2\Untitled2.plcproj" TmcFilePath="..\..\Untitled2\Untitled2.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{3031646D-C997-C307-610E-0C84439BDDAA}">
+			<Name>Untitled2 Instance</Name>
+			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL.SafetyAndOut</Name>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>GVL.RunStop</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL.ErrAck</Name>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Contexts>
+				<Context>
+					<Id NeedCalleeCall="true">0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
+				</Context>
+			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
+		</Instance>
+	</Project>
+	<Mappings>
+		<OwnerA Name="Untitled2 Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1101)^Term 2 (EL6910)">
+				<Link VarA="PlcTask Inputs^GVL.SafetyAndOut" VarB="StandardInputs^TwinSafeGroup1.Std_OutSafety_4" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.ErrAck" VarB="StandardOutputs^TwinSafeGroup1.ErrorAcknowledgement_1" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.RunStop" VarB="StandardOutputs^TwinSafeGroup1.Std_RunStop_3" Size="1"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>
