@@ -4,6 +4,7 @@
     <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
 	//	global vbariables
+	
 	RunStop			AT %Q*	: BOOL;
 	ErrAck			AT %Q*	: BOOL;
 	
